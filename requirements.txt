@@ -1,0 +1,12 @@
+robotframework
+robotframework-requests
+psycopg2-binary
+robotframework-pabot
+robotframework-jsonlibrary
+robotframework-httplibrary
+robotframework-faker
+robotframework-imaplibrary2
+robotframework-browser
+robotframework-screencaplibrary
+
+
