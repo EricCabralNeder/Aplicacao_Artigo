@@ -1,0 +1,7 @@
+log
+logs
+node_modules/
+test-results/
+playwright-report/
+ComparaStrings.cpython-38.pyc
+
