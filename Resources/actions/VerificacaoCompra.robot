@@ -5,8 +5,8 @@ Documentation    https://www.saucedemo.com/checkout-step-two.html
 
 ***Keywords***
 
-Confirmacao de Compra
-
+#Confirmacao de Compra
+E confiro os dados do pedido
     Wait For Elements State         id=header_container    visible    10    Item Mochila não visivel
     
     ${Mochila}      Get Text        id=item_4_title_link
@@ -31,7 +31,8 @@ Confirmacao de Compra
 
 
 
-Compra concluida
+#Compra concluida
+E vejo a tela de confirmacao de compra
 
     Wait For Elements State         css=.complete-header    visible    10    Item Mochila não visivel
     

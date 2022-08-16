@@ -5,7 +5,8 @@ Documentation    https://www.saucedemo.com/cart.html
 
 ***Keywords***
 
-Comprar Itens no Carrinho
+#Comprar Itens no Carrinho
+E realizo a compra no carrinho
 
     Wait For Elements State         id=header_container    visible    10    Item Mochila não visivel
     ${Mochila}      Get Text        id=item_4_title_link
