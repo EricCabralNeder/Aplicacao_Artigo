@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220817 15:29:15.724" rpa="false" schemaversion="3">
+<suite id="s1" name="CenarioCompra" source="/home/eric-neder/Cesar/Aplicacao_Artigo/Tests/CenarioCompra.robot">
+<test id="s1-t1" name="Compra com sucesso" line="13">
+<kw name="Start Session" library="Base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>${headless?}</arg>
+<arg>timeout=0:10:30</arg>
+<arg>devtools=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220817 15:29:16.558" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 630000.0, "devtools": true, "slowMo": 0.0, "tracesDir": "/home/eric-neder/Cesar/Aplicacao_Artigo/browser/traces/4d3be790-be25-4bd7-95f7-31f44ed4da77"}</msg>
+<msg timestamp="20220817 15:29:16.811" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":630000,"devtools":true,"slowMo":0,"tracesDir":"/home/eric-neder/Cesar/Aplicacao_Artigo/browser/traces/4d3be790-be25-4bd7-95f7-31f44ed4da77"}</msg>
+<status status="PASS" starttime="20220817 15:29:16.556" endtime="20220817 15:29:16.812"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 1600, 'height': 900}</arg>
+<arg>bypassCSP=true</arg>
+<arg>tracing=Log</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20220817 15:29:16.815" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": true, "viewport": {"width": 1600, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20220817 15:29:16.847" level="INFO">Successfully created context and trace file will be saved to: /home/eric-neder/Cesar/Aplicacao_Artigo/Log</msg>
+<msg timestamp="20220817 15:29:16.848" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'viewport': {'width': 1600, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'trace': {'screenshots': True, 'snapshots': True}}</msg>
+<status status="PASS" starttime="20220817 15:29:16.813" endtime="20220817 15:29:16.848"/>
+</kw>
+<kw name="Delete All Cookies" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Deletes all cookies from the currently active browser context.</doc>
+<msg timestamp="20220817 15:29:16.863" level="INFO">All cookies deleted.</msg>
+<status status="PASS" starttime="20220817 15:29:16.849" endtime="20220817 15:29:16.863"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${Base_Staging_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220817 15:29:17.987" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<status status="PASS" starttime="20220817 15:29:16.864" endtime="20220817 15:29:17.987"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:16.554" endtime="20220817 15:29:17.988"/>
+</kw>
+<kw name="Dado que estou logado na aplicacao passando os dados:" library="TelaLogin">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=user-name</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Campo de Login não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:18.065" level="INFO">Waited for Element with selector id=user-name at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:17.990" endtime="20220817 15:29:18.066"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:18.068" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<status status="PASS" starttime="20220817 15:29:18.067" endtime="20220817 15:29:18.125"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:18.126" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<status status="PASS" starttime="20220817 15:29:18.125" endtime="20220817 15:29:18.175"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:18.176" endtime="20220817 15:29:18.355"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:17.989" endtime="20220817 15:29:18.356"/>
+</kw>
+<kw name="Quando faco a inclusao dos 2 itens" library="Produtos">
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=item_4_title_link</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:18.374" level="INFO">Waited for Element with selector id=item_4_title_link at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:18.357" endtime="20220817 15:29:18.375"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add-to-cart-sauce-labs-backpack</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:18.375" endtime="20220817 15:29:18.429"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=item_1_title_link</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:18.444" level="INFO">Waited for Element with selector id=item_1_title_link at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:18.430" endtime="20220817 15:29:18.444"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:18.445" endtime="20220817 15:29:18.962"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=shopping_cart_container</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:18.962" endtime="20220817 15:29:19.026"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:18.356" endtime="20220817 15:29:19.027"/>
+</kw>
+<kw name="E realizo a compra no carrinho" library="CarrinhoCompras">
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=header_container</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:19.040" level="INFO">Waited for Element with selector id=header_container at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:19.027" endtime="20220817 15:29:19.041"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Mochila}</var>
+<arg>id=item_4_title_link</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.073" level="INFO">${Mochila} = Sauce Labs Backpack</msg>
+<status status="PASS" starttime="20220817 15:29:19.041" endtime="20220817 15:29:19.073"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Sauce Labs Backpack</arg>
+<arg>${Mochila}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.074" endtime="20220817 15:29:19.074"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${MochilaValor}</var>
+<arg>css=#cart_contents_container &gt; div &gt; div.cart_list &gt; div:nth-child(3) &gt; div.cart_item_label &gt; div.item_pricebar &gt; div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.096" level="INFO">${MochilaValor} = $29.99</msg>
+<status status="PASS" starttime="20220817 15:29:19.074" endtime="20220817 15:29:19.097"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>$29.99</arg>
+<arg>${MochilaValor}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.098" endtime="20220817 15:29:19.098"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Camisa}</var>
+<arg>id=item_1_title_link</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.115" level="INFO">${Camisa} = Sauce Labs Bolt T-Shirt</msg>
+<status status="PASS" starttime="20220817 15:29:19.099" endtime="20220817 15:29:19.115"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Sauce Labs Bolt T-Shirt</arg>
+<arg>${Camisa}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.116" endtime="20220817 15:29:19.116"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${MochilaValor}</var>
+<arg>css=#cart_contents_container &gt; div &gt; div.cart_list &gt; div:nth-child(4) &gt; div.cart_item_label &gt; div.item_pricebar &gt; div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.135" level="INFO">${MochilaValor} = $15.99</msg>
+<status status="PASS" starttime="20220817 15:29:19.117" endtime="20220817 15:29:19.135"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>$15.99</arg>
+<arg>${MochilaValor}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.136" endtime="20220817 15:29:19.136"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=checkout</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:19.136" endtime="20220817 15:29:19.168"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:19.027" endtime="20220817 15:29:19.168"/>
+</kw>
+<kw name="Entao preencho os dados do formulario de cadastro:" library="InformaçõesCompra">
+<arg>Testes</arg>
+<arg>Teste2</arg>
+<arg>58059200</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.title</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:19.180" level="INFO">Waited for Element with selector css=.title at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:19.170" endtime="20220817 15:29:19.180"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=first-name</arg>
+<arg>${PrimeiroNome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.181" level="INFO">Fills the text 'Testes' in the given field.</msg>
+<status status="PASS" starttime="20220817 15:29:19.181" endtime="20220817 15:29:19.217"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=last-name</arg>
+<arg>${UltimooNome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.218" level="INFO">Fills the text 'Teste2' in the given field.</msg>
+<status status="PASS" starttime="20220817 15:29:19.217" endtime="20220817 15:29:19.241"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=postal-code</arg>
+<arg>${CaixaPostal}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.242" level="INFO">Fills the text '58059200' in the given field.</msg>
+<status status="PASS" starttime="20220817 15:29:19.241" endtime="20220817 15:29:19.277"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=continue</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:19.278" endtime="20220817 15:29:19.344"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:19.169" endtime="20220817 15:29:19.344"/>
+</kw>
+<kw name="E confiro os dados do pedido" library="VerificacaoCompra">
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=header_container</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:19.358" level="INFO">Waited for Element with selector id=header_container at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:19.345" endtime="20220817 15:29:19.358"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Mochila}</var>
+<arg>id=item_4_title_link</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.376" level="INFO">${Mochila} = Sauce Labs Backpack</msg>
+<status status="PASS" starttime="20220817 15:29:19.359" endtime="20220817 15:29:19.376"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Sauce Labs Backpack</arg>
+<arg>${Mochila}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.376" endtime="20220817 15:29:19.377"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${MochilaValor}</var>
+<arg>css=#checkout_summary_container &gt; div &gt; div.cart_list &gt; div:nth-child(3) &gt; div.cart_item_label &gt; div.item_pricebar &gt; div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.396" level="INFO">${MochilaValor} = $29.99</msg>
+<status status="PASS" starttime="20220817 15:29:19.377" endtime="20220817 15:29:19.396"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>$29.99</arg>
+<arg>${MochilaValor}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.397" endtime="20220817 15:29:19.397"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Camisa}</var>
+<arg>id=item_1_title_link</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.415" level="INFO">${Camisa} = Sauce Labs Bolt T-Shirt</msg>
+<status status="PASS" starttime="20220817 15:29:19.398" endtime="20220817 15:29:19.415"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Sauce Labs Bolt T-Shirt</arg>
+<arg>${Camisa}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.416" endtime="20220817 15:29:19.416"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${MochilaValor}</var>
+<arg>css=#checkout_summary_container &gt; div &gt; div.cart_list &gt; div:nth-child(4) &gt; div.cart_item_label &gt; div.item_pricebar &gt; div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.437" level="INFO">${MochilaValor} = $15.99</msg>
+<status status="PASS" starttime="20220817 15:29:19.416" endtime="20220817 15:29:19.437"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>$15.99</arg>
+<arg>${MochilaValor}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.438" endtime="20220817 15:29:19.439"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=finish</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220817 15:29:19.440" endtime="20220817 15:29:19.495"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:19.344" endtime="20220817 15:29:19.496"/>
+</kw>
+<kw name="E vejo a tela de confirmacao de compra" library="VerificacaoCompra">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.complete-header</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<arg>Item Mochila não visivel</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220817 15:29:19.509" level="INFO">Waited for Element with selector css=.complete-header at state visible</msg>
+<status status="PASS" starttime="20220817 15:29:19.497" endtime="20220817 15:29:19.510"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${checkout}</var>
+<arg>css=.complete-header</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220817 15:29:19.534" level="INFO">${checkout} = THANK YOU FOR YOUR ORDER</msg>
+<status status="PASS" starttime="20220817 15:29:19.510" endtime="20220817 15:29:19.535"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>THANK YOU FOR YOUR ORDER</arg>
+<arg>${checkout}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220817 15:29:19.535" endtime="20220817 15:29:19.535"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:19.496" endtime="20220817 15:29:19.535"/>
+</kw>
+<kw name="Finish Test" library="Base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20220817 15:29:19.714" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220817 15:29:19.537" endtime="20220817 15:29:19.715"/>
+</kw>
+<kw name="Close Browser" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20220817 15:29:19.737" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20220817 15:29:19.715" endtime="20220817 15:29:19.737"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:19.536" endtime="20220817 15:29:19.738"/>
+</kw>
+<status status="PASS" starttime="20220817 15:29:16.545" endtime="20220817 15:29:19.738"/>
+</test>
+<doc>Classe de testes com validação para cartão simples</doc>
+<status status="PASS" starttime="20220817 15:29:15.727" endtime="20220817 15:29:19.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CenarioCompra">CenarioCompra</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220817 15:29:15.747" level="WARN">Imported resource file '/home/eric-neder/Cesar/Aplicacao_Artigo/Resources/kws.robot' is empty.</msg>
+<msg timestamp="20220817 15:29:16.067" level="ERROR">Error in file '/home/eric-neder/Cesar/Aplicacao_Artigo/Resources/Base.robot' on line 19: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'dateutil'
+Traceback (most recent call last):
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/FakerLibrary/__init__.py", line 2, in &lt;module&gt;
+    from .keywords import FakerKeywords
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/FakerLibrary/keywords.py", line 10, in &lt;module&gt;
+    import faker.factory
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/__init__.py", line 1, in &lt;module&gt;
+    from faker.factory import Factory
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/factory.py", line 8, in &lt;module&gt;
+    from .config import AVAILABLE_LOCALES, DEFAULT_LOCALE, PROVIDERS
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/config.py", line 13, in &lt;module&gt;
+    AVAILABLE_LOCALES = find_available_locales(PROVIDERS)
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/utils/loading.py", line 46, in find_available_locales
+    provider_module = import_module(provider_path)
+  File "/home/eric-neder/.robocorp/holotree/123eac0_b1f3c24_e36f4f7b/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/providers/address/__init__.py", line 3, in &lt;module&gt;
+    from .. import BaseProvider, ElementsType, date_time
+  File "/home/eric-neder/.local/lib/python3.8/site-packages/faker/providers/date_time/__init__.py", line 12, in &lt;module&gt;
+    from dateutil import relativedelta
+PYTHONPATH:
+  /home/eric-neder/.vscode/extensions/robocorp.robotframework-lsp-1.0.0/src/robotframework_debug_adapter
+  /home/eric-neder/Cesar/Aplicacao_Artigo
+  /home/eric-neder/.vscode/extensions/robocorp.robotframework-lsp-1.0.0/src
+  /home/eric-neder/.vscode/extensions/robocorp.robotframework-lsp-1.0.0/src/robotframework_ls/vendored
+  /home/eric-neder/.robocorp/holotree/123eac0_b1f3c24_e36f4f7b/lib/python38.zip
+  /home/eric-neder/.robocorp/holotree/123eac0_b1f3c24_e36f4f7b/lib/python3.8
+  /home/eric-neder/.robocorp/holotree/123eac0_b1f3c24_e36f4f7b/lib/python3.8/lib-dynload
+  /home/eric-neder/.local/lib/python3.8/site-packages
+  /home/eric-neder/.robocorp/holotree/123eac0_b1f3c24_e36f4f7b/lib/python3.8/site-packages</msg>
+</errors>
+</robot>

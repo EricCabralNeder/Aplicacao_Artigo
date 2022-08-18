@@ -1,7 +1,7 @@
 ***Settings***
 Documentation    Classe de testes com validação para cartão simples
 
-Resource    ${EXECDIR}/Resources/Base.robot
+Resource    ../Resources/Base.robot
 
 Test Setup        Start Session    
 Test Teardown     Finish Test

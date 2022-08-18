@@ -1,7 +1,7 @@
 ***Settings***
 Documentation    https://docs.google.com/document/d/1SgsnOcW3MCxSw1KfGTqhOIzBmfjuoRC2qIj4UO20ImU/edit
 
-
+Resource    ../Base.robot
 
 ***Keywords***
 

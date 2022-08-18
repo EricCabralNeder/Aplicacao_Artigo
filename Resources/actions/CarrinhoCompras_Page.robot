@@ -1,7 +1,7 @@
 ***Settings***
 Documentation    https://www.saucedemo.com/cart.html
 
-
+Resource    ../Base.robot
 
 ***Keywords***
 

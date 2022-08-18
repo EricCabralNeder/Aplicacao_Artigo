@@ -30,7 +30,7 @@ Library    ImapLibrary2
 
 ${Base_Staging_URL}    https://www.saucedemo.com/
 
-${headless?}           False
+${headless?}           true
 
 
 

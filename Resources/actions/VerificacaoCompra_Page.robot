@@ -1,7 +1,7 @@
 ***Settings***
 Documentation    https://www.saucedemo.com/checkout-step-two.html
 
-
+Resource    ../Base.robot
 
 ***Keywords***
 

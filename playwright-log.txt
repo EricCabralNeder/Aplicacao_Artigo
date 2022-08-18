@@ -1,0 +1,121 @@
+{"level":30,"time":"2022-08-17T18:29:16.513Z","pid":3023654,"hostname":"N1004876","msg":"Listening on 55497"}
+{"level":30,"time":"2022-08-17T18:29:16.539Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:16.540Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:16.550Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:16.550Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:16.570Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-08-17T18:29:16.810Z","pid":3023654,"hostname":"N1004876","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-08-17T18:29:16.819Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-08-17T18:29:16.820Z","pid":3023654,"hostname":"N1004876","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-08-17T18:29:16.820Z","pid":3023654,"hostname":"N1004876","msg":"Trace file: /home/eric-neder/Cesar/Aplicacao_Artigo/Log"}
+{"level":30,"time":"2022-08-17T18:29:16.838Z","pid":3023654,"hostname":"N1004876","msg":"Tracing enabled with: { screenshots: true, snapshots: true }"}
+{"level":30,"time":"2022-08-17T18:29:16.840Z","pid":3023654,"hostname":"N1004876","msg":"Changed active context"}
+{"level":30,"time":"2022-08-17T18:29:16.841Z","pid":3023654,"hostname":"N1004876","msg":"End of node method newContext"}
+{"level":30,"time":"2022-08-17T18:29:16.867Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-08-17T18:29:16.867Z","pid":3023654,"hostname":"N1004876","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-08-17T18:29:16.907Z","pid":3023654,"hostname":"N1004876","msg":"Video path: undefined"}
+{"level":30,"time":"2022-08-17T18:29:16.907Z","pid":3023654,"hostname":"N1004876","msg":"Changed active page"}
+{"level":30,"time":"2022-08-17T18:29:17.984Z","pid":3023654,"hostname":"N1004876","msg":"End of node method newPage"}
+{"level":30,"time":"2022-08-17T18:29:17.994Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:17.995Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2022-08-17T18:29:18.061Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:18.071Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:18.072Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2022-08-17T18:29:18.122Z","pid":3023654,"hostname":"N1004876","msg":"End of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:18.128Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:18.129Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2022-08-17T18:29:18.172Z","pid":3023654,"hostname":"N1004876","msg":"End of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:18.177Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.178Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
+{"level":30,"time":"2022-08-17T18:29:18.353Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.358Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:18.358Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_4_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:18.372Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:18.376Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.376Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=add-to-cart-sauce-labs-backpack in page."}
+{"level":30,"time":"2022-08-17T18:29:18.426Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.431Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:18.432Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_1_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:18.442Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:18.448Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.449Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=add-to-cart-sauce-labs-bolt-t-shirt in page."}
+{"level":30,"time":"2022-08-17T18:29:18.959Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.964Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:18.964Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=shopping_cart_container in page."}
+{"level":30,"time":"2022-08-17T18:29:19.024Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.029Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.029Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=header_container in page."}
+{"level":30,"time":"2022-08-17T18:29:19.039Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.042Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.042Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_4_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:19.072Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element id=item_4_title_link containing Sauce Labs Backpack"}
+{"level":30,"time":"2022-08-17T18:29:19.072Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.075Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.075Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=#cart_contents_container > div > div.cart_list > div:nth-child(3) > div.cart_item_label > div.item_pricebar > div in page."}
+{"level":30,"time":"2022-08-17T18:29:19.093Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element css=#cart_contents_container > div > div.cart_list > div:nth-child(3) > div.cart_item_label > div.item_pricebar > div containing $29.99"}
+{"level":30,"time":"2022-08-17T18:29:19.093Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.100Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.100Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_1_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:19.113Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element id=item_1_title_link containing Sauce Labs Bolt T-Shirt"}
+{"level":30,"time":"2022-08-17T18:29:19.113Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.118Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.118Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=#cart_contents_container > div > div.cart_list > div:nth-child(4) > div.cart_item_label > div.item_pricebar > div in page."}
+{"level":30,"time":"2022-08-17T18:29:19.133Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element css=#cart_contents_container > div > div.cart_list > div:nth-child(4) > div.cart_item_label > div.item_pricebar > div containing $15.99"}
+{"level":30,"time":"2022-08-17T18:29:19.133Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.137Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.137Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=checkout in page."}
+{"level":30,"time":"2022-08-17T18:29:19.166Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.171Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.171Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=.title in page."}
+{"level":30,"time":"2022-08-17T18:29:19.177Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.182Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.182Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=first-name in page."}
+{"level":30,"time":"2022-08-17T18:29:19.215Z","pid":3023654,"hostname":"N1004876","msg":"End of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.219Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.219Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=last-name in page."}
+{"level":30,"time":"2022-08-17T18:29:19.239Z","pid":3023654,"hostname":"N1004876","msg":"End of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.242Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.242Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=postal-code in page."}
+{"level":30,"time":"2022-08-17T18:29:19.276Z","pid":3023654,"hostname":"N1004876","msg":"End of node method fillText"}
+{"level":30,"time":"2022-08-17T18:29:19.280Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.280Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=continue in page."}
+{"level":30,"time":"2022-08-17T18:29:19.342Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.347Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.347Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=header_container in page."}
+{"level":30,"time":"2022-08-17T18:29:19.357Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.359Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.359Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_4_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:19.375Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element id=item_4_title_link containing Sauce Labs Backpack"}
+{"level":30,"time":"2022-08-17T18:29:19.375Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.379Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.379Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=#checkout_summary_container > div > div.cart_list > div:nth-child(3) > div.cart_item_label > div.item_pricebar > div in page."}
+{"level":30,"time":"2022-08-17T18:29:19.394Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element css=#checkout_summary_container > div > div.cart_list > div:nth-child(3) > div.cart_item_label > div.item_pricebar > div containing $29.99"}
+{"level":30,"time":"2022-08-17T18:29:19.394Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.399Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.399Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=item_1_title_link in page."}
+{"level":30,"time":"2022-08-17T18:29:19.413Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element id=item_1_title_link containing Sauce Labs Bolt T-Shirt"}
+{"level":30,"time":"2022-08-17T18:29:19.413Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.417Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.418Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=#checkout_summary_container > div > div.cart_list > div:nth-child(4) > div.cart_item_label > div.item_pricebar > div in page."}
+{"level":30,"time":"2022-08-17T18:29:19.435Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element css=#checkout_summary_container > div > div.cart_list > div:nth-child(4) > div.cart_item_label > div.item_pricebar > div containing $15.99"}
+{"level":30,"time":"2022-08-17T18:29:19.435Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.441Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.441Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with id=finish in page."}
+{"level":30,"time":"2022-08-17T18:29:19.493Z","pid":3023654,"hostname":"N1004876","msg":"End of node method click"}
+{"level":30,"time":"2022-08-17T18:29:19.499Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.499Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=.complete-header in page."}
+{"level":30,"time":"2022-08-17T18:29:19.508Z","pid":3023654,"hostname":"N1004876","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-08-17T18:29:19.511Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.511Z","pid":3023654,"hostname":"N1004876","msg":"Strict mode is enabled, find Locator with css=.complete-header in page."}
+{"level":30,"time":"2022-08-17T18:29:19.532Z","pid":3023654,"hostname":"N1004876","msg":"Retrieved text for element css=.complete-header containing THANK YOU FOR YOUR ORDER"}
+{"level":30,"time":"2022-08-17T18:29:19.533Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getText"}
+{"level":30,"time":"2022-08-17T18:29:19.538Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-08-17T18:29:19.712Z","pid":3023654,"hostname":"N1004876","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-08-17T18:29:19.716Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2022-08-17T18:29:19.735Z","pid":3023654,"hostname":"N1004876","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2022-08-17T18:29:19.739Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:19.739Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:19.742Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:19.742Z","pid":3023654,"hostname":"N1004876","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-08-17T18:29:21.768Z","pid":3023654,"hostname":"N1004876","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2022-08-17T18:29:21.769Z","pid":3023654,"hostname":"N1004876","msg":"End of node method closeAllBrowsers"}
