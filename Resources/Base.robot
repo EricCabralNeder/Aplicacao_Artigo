@@ -2,11 +2,11 @@
 Documentation    Classe base com as dependencias de todo o projeto
 
 Resource    kws.robot
-Resource    actions/TelaLogin.robot
-Resource    actions/Produtos.robot
-Resource    actions/CarrinhoCompras.robot
-Resource    actions/InformaçõesCompra.robot
-Resource    actions/VerificacaoCompra.robot
+Resource    actions/TelaLogin_Page.robot
+Resource    actions/Produtos_Page.robot
+Resource    actions/CarrinhoCompras_Page.robot
+Resource    actions/InformaçõesCompra_Page.robot
+Resource    actions/VerificacaoCompra_Page.robot
 
 
 #Resource    ${EXECDIR}/Resources/Libs/ComparaStrings.py
