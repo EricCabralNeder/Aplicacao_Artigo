@@ -1,52 +1,57 @@
-Robot Framework: automação de testes para o artigo de conclusão de curso.
+# Aplicação RobotFramework para artigo
 
-Para isso, utilizei os recursos da biblioteca robot-framework-appiumlibrary e também demais keywords da documentação.
+Repositório com testes automatizados para WEB utilizando os frameworks: robotframework e playwright
 
-Sobre o aplivativo em teste
-O aplicativo Curso de Appium vem sendo desenvolvido para o ensino/aprendizado de automação mobile com Appium. É um aplicativo simples, com o objetivo de realizar cadastros, mas traz elementos muito comuns de fluxos de automação mobile: EditText, spinner para fazer scroll up/down em listas, toast messages, etc.
+> Testando e validando sistema WEB em robotframework com
+[Playwright](https://robotframework-browser.org/)
+
+## Índice
+
+- [Pré-requisitos](#pre-requisitos)
+- [Configuração](#configuracao)
+- [Instalação](#instalacao)
 
 
-Organização do projeto
-appium-robot/
-  resources/
-    apks/
-    factories/
-    pages/
-    Base.robot
-  .gitignore
-  specs/
-  requirements.txt
-apks: aplicativos em uso no projeto.
-factories: métodos em python responsáveis por gerar dados para os testes
-pages: abstrações das telas, contendo as palavras-chave utilizadas nos fluxos de teste.
-Base.robot: arquivo para centralizar componentes de uso comum nos testes
-specs: fluxos de teste de cada módulo da aplicação.
-.gitignore: arquivo padrão.
-requirements.txt: dependências do projeto.
-Passo a passo para executar o projeto
-Sugiro o uso de algum ambiente virtual (virtualenv) para isolar as bibliotecas utilizadas aqui, mas não tem problemas iniciar o projeto sem um ambiente virtual. Mais sobre ambientes virtuais aqui.
+---
 
-Clonar o projeto:
+## <a id="pre-requisitos"></a>Pré-requisitos
 
-git clone https://github.com/DouglasWillamis/appium-robot.git
-Instalar as dependências (com esse passo vc não precisa instalar bibliotecas individualmente, como nos 2 passos seguintes):
+- [Ter o Python 3.7+](https://www.python.org/downloads/)
+- [Ter o node LTS](https://nodejs.org/en/download/)
+- [Ter o allure-commandline](https://www.npmjs.com/package/allure-commandline)
+- [Ter o VSCode ou outra IDE](https://code.visualstudio.com/download)
 
-pip install -r requirements.txt
-OU instalar as bibliotecas de forma de forma isolada.
+## <a id="configuracao"></a>Configuração
 
-Instalar a biblioteca robotframework-appiumlibrary (não precisa se você instalou via requirements.txt):
+##### Instalação do Python
+- Windows, Linux e Mac: https://www.w3computing.com/python/installing-python-windows-macos-linux/
 
-pip install -U robotframework-appiumlibrary
-Instalar o appium-python-client (não precisa se você instalou via requirements.txt):
+##### Instalação do Node
+- Windows, Linux e Mac: https://www.freecodecamp.org/news/how-to-install-node-in-your-machines-macos-linux-windows/
 
-pip install -U appium-python-client
-Instalar a biblioteca faker (não precisa se você instalou via requirements.txt):
+##### Instalação do allure-commandline
+- Windows, Linux e Mac: https://github.com/allure-framework/allure-npm#readme
 
-pip install -U Faker
-Para executar o projeto:
+Use o arquivo requirements.txt já criado para baixar/instalar a dependência
 
-robot specs
-Caso queira direcionar os arquivos de saída gerados pela execução, é só criar uma pasta no projeto e usar a flag -d indicando o nome da pasta:
+## <a id="instalacao"></a>Instalação
 
-robot -d logs specs
+> Clonar o projeto
 
+- Clone este repositório para sua máquina local usando http ou ssh, por exemplo:
+
+`git clone git@github.com:EricCabralNeder/Aplicacao_Artigo.git`
+
+- Instale todas as dependências (requirements.txt) utilizando pip:
+
+`cd /Aplicacao_Artigo`
+
+`pip install -r requirements.txt`
+
+![Baixe as dependências via Pip](https://www.qt.io/hs-fs/hubfs/install.gif?width=512&name=install.gif)
+
+> Notas
+
+- Atulize o arquivo requirements.txt na adição de novas bibliotecas
+
+- Comando para ver os reports gerados para o allure `allure serve` (comando deve ser rodado na pasta raiz do projeto)
