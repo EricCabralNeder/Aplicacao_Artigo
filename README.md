@@ -52,6 +52,6 @@ Use o arquivo requirements.txt já criado para baixar/instalar a dependência
 
 > Notas
 
-- Use pom.xml para baixar novas bibliotecas
+- Atulize o arquivo requirements.txt na adição de novas bibliotecas
 
 - Comando para ver os reports gerados para o allure `allure serve` (comando deve ser rodado na pasta raiz do projeto)
